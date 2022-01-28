@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <script>
+      /*
+           @we have to create calculator function which accpet 3 arguments and perform athemetic operation
+        num1 == parseInt(num1) && num2 == parseInt(num2)
+           Algo:
+           -START
+           1.In function : pass 3 arguments
+               a. number, b. number, c. operator
+               b. If number as string : typecast It.
+               c. Handle null and undefined apart from this return NaN
+               d. Only number accpet ohterwise NaN
+               e. 3rd argument should be arthematic operator otherwise return error
+           2. Operator should perform arthemetic operation
+               a. return result
+           -END
+      */
+      //Approch : 1
+      /*
+      function cal(num1, num2, operator) {
+        if (parseInt(num1) && parseInt(num2)) {
+          if (operator == "+") {
+            const result = num1 + num2;
+            console.log("Value :", result);
+            return;
+          }
+          if (operator == "-") {
+            const result = num1 - num2;
+            console.log("Value :", result);
+            return;
+          }
+          if (operator == "*") {
+            const result = num1 * num2;
+            console.log("Value :", result);
+            return;
+          }
+          if (operator == "/") {
+            const result = num1 / num2;
+            console.log("Value :", result);
+            return;
+          }
+        }
+      }
+      cal(); */
+      //Approch 2:
+
+      function cal(num1, num2, operator) {
+        n1 = parseInt(num1);
+        n2 = Number(num2);
+        if (n1 && n2) {
+        }
+        if (
+          operator == "+" ||
+          operator == "-" ||
+          operator == "/" ||
+          operator == "*"
+        ) {
+          var calc = {
+            "+": function (n1, n2) {
+              return n1 + n2;
+            },
+            "-": function (n1, n2) {
+              return n1 - n2;
+            },
+            "/": function (n1, n2) {
+              return n1 / n2;
+            },
+            "*": function (n1, n2) {
+              return n1 * n2;
+            },
+          };
+          console.log(calc[operator](n1, n2));
+        }
+        console.log("incorrect operator");
+        return;
+      }
+      cal(5, 3, "%");
+    </script>
+  </body>
+</html>

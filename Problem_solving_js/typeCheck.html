@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*
+      Algo:
+      1. we have to create a function to get a value
+      2. Then we have to compare type with given value
+      3. if given value will match then return it otherwise convert into number
+      4. falsy value should be 0 and truthy 1
+      5. after converstion return value */
+
+      // Approch  : 1
+      function convertNumber(value) {
+        if (
+          value == undefined ||
+          value == "" ||
+          value == null ||
+          value == Infinity
+        ) {
+          console.log("This is falsy value : 0");
+          return 0;
+        }
+        if (isNaN(value)) {
+          console.log("Not a number : 0");
+          return 0;
+        } else {
+          console.log("It is number  : ", value);
+          return 1;
+        }
+      }
+      convertNumber(NaN);
+
+      //Approch: 2;
+      /*  function typeCheck(x) {
+        console.log(Number(x));
+      }
+      typeCheck(NaN); */
+    </script>
+  </body>
+</html>
