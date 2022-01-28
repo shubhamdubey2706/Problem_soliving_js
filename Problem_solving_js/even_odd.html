@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prac</title>
+  </head>
+  <body>
+    <!-- 
+    @Check no whether it's even or odd Algo : 
+    1. in function : pass single value.
+    2. if number 0 so return it's even no.
+    3. if no as string typecast it and hold it. 
+    4. check even or odd value and return result. 
+    5. if value is null, undefined, string should not accpet.
+    6. return msg incorrect value and put number.
+     -->
+
+    <script>
+      function checkNumber(value) {
+        if (value == 0) {
+          return "Even number";
+        }
+        n1 = parseInt(value);
+        if (n1) {
+          if (n1 % 2 == 0) {
+            return "even number";
+          }
+          return "odd number";
+        }
+        return "Incorrect value, put number";
+      }
+      console.log(checkNumber(""));
+    </script>
+  </body>
+</html>
