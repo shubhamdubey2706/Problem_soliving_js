@@ -1,4 +1,4 @@
-# Problem_soliving_js
+# Problem_solving_js
 @We have crated multiple JavaScript program to solve the problem.
 Here :
 @Problem statement
