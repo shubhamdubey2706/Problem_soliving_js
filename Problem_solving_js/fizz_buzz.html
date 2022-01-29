@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fizz_buzz</title>
+    <h4>Fizz_buzz</h4>
+  </head>
+  <body>
+    <!--  @find fizz (divisable by 3) and buzz (divisable by 3) values 
+    1. In function- take 1 argument 
+       1.1 If pass 0, It shoud handle and retun "nor fizz neither buzz"
+       1.2 If pass null, undefined, NaN and String it should handle and retun "incorrect value"
+    2. Itrate loop to check fizz and buzz between given value
+      2.1 divisible by 3 return "fizz"
+      2.2 divisible by 5 return "buzz"
+      2.3 divisible by 3 & 5 both return "fizzbuzz"
+    3. Print all fizz & buzz within given value  -->
+    <!-- 
+    <script>
+      function fuzzBizz(value) {
+        const val = parseInt(value);
+        if (val === 0) {
+          console.log("nor fizz neither buzz");
+          return;
+        }
+        if (val && val > 0) {
+          for (var i = 1; i <= val; i++) {
+            if (i % 3 == 0) {
+              console.log("fizz : 3 : ", i);
+            }
+            if (i % 5 == 0) {
+              console.log("buzz : 5 :", i);
+            }
+            if (i % 3 == 0 && i % 5 == 0) {
+              console.log("fizzbuzz : 3 & 5 :", i);
+            }
+          }
+        } else {
+          console.log("incorrect value");
+        }
+      }
+      fuzzBizz(0);
+    </script> -->
+  </body>
+</html>
