@@ -1,9 +1,9 @@
 # Problem_solving_js
-@We have crated multiple JavaScript program to solve the problem.
-Here :
-@Problem statement
-@Acceptance criteria
-@Unit test cases
-@Algorithm
-@Code in multiple version
-@After code : optimization
+@We have crated multiple JavaScript program to solve the problem. <br />
+Here :<br />
+@Problem statement<br />
+@Acceptance criteria<br />
+@Unit test cases<br />
+@Algorithm<br />
+@Code in multiple version<br />
+@After code : optimization<br />
